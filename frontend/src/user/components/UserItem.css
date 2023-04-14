@@ -1,0 +1,46 @@
+.user {
+  margin: 1rem auto;
+  width: 80%;
+  max-width: 300px;
+}
+
+.user-card {
+  display: flex;
+  gap: 1rem;
+  background-color: rgb(60, 60, 60);
+}
+
+.user-card:hover {
+  background-color: rgb(70, 70, 70);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: white;
+}
+
+.user-name {
+}
+
+.user-places {
+}
+
+@media (min-width: 480px) and (max-width: 760px) {
+  .user {
+    width: 70%;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 980px) {
+  .user {
+    width: 40%;
+  }
+}
+
+@media (min-width: 980px) {
+  .user {
+    width: 30%;
+  }
+}

@@ -1,0 +1,19 @@
+.nav-link {
+  padding: 1rem;
+}
+
+.nav-link a {
+  color: rgb(200, 200, 200);
+}
+
+.nav-link:hover {
+  background-color: rgb(30, 30, 30);
+}
+
+.nav-link:hover a {
+  color: white;
+}
+
+.nav-link a.active {
+  color: white;
+}

@@ -1,0 +1,36 @@
+.nav {
+  display: none;
+}
+
+.header {
+  margin: 1rem 0;
+}
+
+.header a {
+  color: white;
+  font-size: 2rem;
+}
+
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+}
+
+.close-sidebar {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 100;
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (min-width: 760px) {
+  .nav {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
