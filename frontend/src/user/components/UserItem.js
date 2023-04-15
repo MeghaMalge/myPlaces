@@ -8,13 +8,14 @@ import "./UserItem.css";
 const UserItem = ({ user }) => {
   return (
     <li className="user">
-      <Link to={`/${user.id}/places`}>
+      <Link to={`/${user._id}/places`}>
         <Card className="user-card">
           <Avatar imageUrl={user.image} alt={user.name} />
           <section className="user-info">
             <span className="user-name">{user.name}</span>
             <span className="user-places">
-              {user.places} {user.places === 1 ? "place" : "places"}
+              {user.places.length}{" "}
+              {user.places.length === 1 ? "place" : "places"}
             </span>
           </section>
         </Card>

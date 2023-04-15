@@ -14,7 +14,7 @@ const PlacesList = ({ places }) => {
   return (
     <div className="places-list">
       {places.map((place) => (
-        <PlaceItem key={place.id} place={place} />
+        <PlaceItem key={place._id} place={place} />
       ))}
     </div>
   );

@@ -6,32 +6,32 @@ const getCoordsForAddress = require("../utils/location");
 const Place = require("../models/place");
 const User = require("../models/user");
 
-let PLACES = [
-  {
-    id: "p1",
-    title: "Yosemite National Park",
-    description:
-      "One of the most visited national parks in the United States, Yosemite National Park is prized for its jaw-dropping beauty that comprises magnificent granite cliffs, mountains, waterfalls and glaciers.",
-    address: "California, USA",
-    location: {
-      lat: 37.865101,
-      lng: -119.53833,
-    },
-    creator: "u1",
-  },
-  {
-    id: "p2",
-    title: "Yosemite National Park",
-    description:
-      "One of the most visited national parks in the United States, Yosemite National Park is prized for its jaw-dropping beauty that comprises magnificent granite cliffs, mountains, waterfalls and glaciers.",
-    address: "California, USA",
-    location: {
-      lat: 37.865101,
-      lng: -119.53833,
-    },
-    creator: "u1",
-  },
-];
+// let PLACES = [
+//   {
+//     id: "p1",
+//     title: "Yosemite National Park",
+//     description:
+//       "One of the most visited national parks in the United States, Yosemite National Park is prized for its jaw-dropping beauty that comprises magnificent granite cliffs, mountains, waterfalls and glaciers.",
+//     address: "California, USA",
+//     location: {
+//       lat: 37.865101,
+//       lng: -119.53833,
+//     },
+//     creator: "u1",
+//   },
+//   {
+//     id: "p2",
+//     title: "Yosemite National Park",
+//     description:
+//       "One of the most visited national parks in the United States, Yosemite National Park is prized for its jaw-dropping beauty that comprises magnificent granite cliffs, mountains, waterfalls and glaciers.",
+//     address: "California, USA",
+//     location: {
+//       lat: 37.865101,
+//       lng: -119.53833,
+//     },
+//     creator: "u1",
+//   },
+// ];
 
 const getAllPlaces = async (req, res, next) => {
   let places;

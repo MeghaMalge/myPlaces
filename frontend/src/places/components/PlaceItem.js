@@ -51,7 +51,7 @@ const PlaceItem = ({ place }) => {
               VIEW ON MAP
             </button>
             <section className="icon-btn-container">
-              <Link to={`/places/${place.id}`}>
+              <Link to={`/places/${place._id}`}>
                 <button className="icon-button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

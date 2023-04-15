@@ -62,11 +62,9 @@ const signup = async (req, res, next) => {
     password,
     places: [],
   });
-  console.log(newUser);
   try {
     await newUser.save();
   } catch (err) {
-    console.log(err);
     return next(new HttpError("Could not signup, please try again ...", 500));
   }
   res.status(201).json(newUser);
